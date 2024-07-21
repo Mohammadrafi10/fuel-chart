@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuel chart</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.min.css">
+</head>
+<body>
+    <!--header-->
+    <div class="header w-full h-16 bg-gradient-to-tr from-blue-600 to-blue-900 shadow-md shadow-gray-400 flex justify-between items-center">
+        <button type="button" class="text-white outline-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Home</button>
+        <h1 class="text-2xl text-white">Afghanistan islamic imarate</h1> 
+<form>   
+    <label for="ID here" class="w-20 mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">ID here</label>
+    <div class="relative">
+        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+            <svg class="w-4 h-4 text-blue-300 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+        </div>
+        <input type="search" id="search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="ID here" required />
+    </div>
+</form>
+    </div>
+    <!--header-->
+<!--content of charts-->
+<div class="container grid md:grid-cols-5 sm:grid-cols-1 mt-5 w-full shadow-gray-200 shadow-lg  gap-2 p-2">
+    <div
+  class="block rounded-lg transition duration-500 ease-out hover:bg-orange-300 bg-white border border-red-700 p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+  <h5 class="mb-2 text-xl font-medium leading-tight flex justify-between items-center"><i class="fa-solid fa-gas-pump text-4xl text-red-600"></i>تیل وارد شده</h5>
+  <p class="mb-4 text-base text-right">
+    تیل باقیمانده: ۱۲
+  </p>
+</div>
+<div
+class="block rounded-lg transition duration-500 ease-out hover:bg-green-300 bg-white border border-green-700 p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+<h5 class="mb-2 text-xl font-medium leading-tight flex justify-between items-center"><i class="fa-solid fa-gas-pump text-4xl text-green-700"></i>تیل دریافت شده</h5>
+<p class="mb-4 text-base text-right">
+تیل باقیمانده: ۱۲
+</p>
+</div>
+<div
+class="block rounded-lg transition duration-500 ease-out hover:bg-fuchsia-300 bg-white border border-fuchsia-700 p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+<h5 class="mb-2 text-xl font-medium leading-tight flex justify-between items-center"><i class="fa-solid fa-gas-pump text-4xl text-fuchsia-600"></i>تیل باقیمانده</h5>
+<p class="mb-4 text-base text-right">
+تیل باقیمانده: ۱۲
+</p>
+</div>
+<div
+class="block rounded-lg transition duration-500 ease-out hover:bg-blue-200 bg-white border border-blue-700 p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+<h5 class="mb-2 text-xl font-medium leading-tight flex justify-between items-center"><i class="fa-solid fa-gas-pump text-4xl text-blue-700"></i>تیل اخذ شده</h5>
+<p class="mb-4 text-base text-right">
+تیل باقیمانده: ۱۲
+</p>
+</div>
+<div
+class="block rounded-lg transition duration-500 ease-out hover:bg-teal-200 bg-white border border-teal-700 p-6 text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+<h5 class="mb-2 text-xl font-medium leading-tight flex justify-between items-center"><i class="fa-solid fa-gas-pump text-4xl text-teal-500"></i>تیل ماه گذشته</h5>
+<p class="mb-4 text-base text-right">
+تیل باقیمانده: ۱۲
+</p>
+</div>
+</div>
+  <!--content of charts-->
+  <!--the owner checkbar-->
+  <div class="container p-2 w-full grid sm:grid-cols-1 md:grid-cols-3 mt-10 bg-white shadow-md shadow-gray-500 gap-2">
+    <img class="w-60" src="../images/images.jpg" alt="">
+    <table class="table-auto w-full border border-gray-400">
+      <thead>
+        <tr class="border border-gray-400">
+          <th class="px-4 py-2">Column 1</th>
+          <th class="px-4 py-2">Column 2</th>
+          <th class="px-4 py-2">Column 3</th>
+          <th class="px-4 py-2">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="px-4 py-2">Cell 1</td>
+          <td class="px-4 py-2">Cell 2</td>
+          <td class="px-4 py-2">Cell 3</td>
+          <td class="px-4 py-2">
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+              Download
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="px-4 py-2">Cell 4</td>
+          <td class="px-4 py-2">Cell 5</td>
+          <td class="px-4 py-2">Cell 6</td>
+          <td class="px-4 py-2">
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">
+              Download
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+<form>
+  <div class="flex">
+      <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">your amount</label>
+      </div>
+      <div class="relative w-full">
+          <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg rounded-s-gray-100 rounded-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="drop value" required />
+          <button type="submit" class="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><svg class="w-6 h-6 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7 7V5"/>
+          </svg>
+          
+</svg></button>
+      </div>
+  </div>
+</form>
+
+  </div>
+  <!--the owner checkbar-->
+  <!--oil pump checkbar-->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>
